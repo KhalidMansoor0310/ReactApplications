@@ -7,16 +7,21 @@ function TextForm(props) {
     const HandleUpClick=()=>{
         let newText = text.toUpperCase();
         setText(newText);
+        props.showAlert('Uppercase has been clicked','info');
     }
     
     const HandleLowerClick=()=>{
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert('lowerCase has been clicked','info');
+
     }
   
     const HandleRemoveClick=()=>{
         let newText = '';
         setText(newText);
+        props.showAlert('Remove all has been clicked','danger');
+
     }
     const HandleOnchange=(e)=>{
         setText(e.target.value);
