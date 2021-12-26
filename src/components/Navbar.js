@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
     return (
@@ -11,11 +12,14 @@ export default function Navbar(props) {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            {/* <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/TextForm">Home</Link>
+                            </li> */}
+                            {/* <li className="nav-item">
+                                <Link className="nav-link" to="/About">About</Link>
+                            </li> */}
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">About</a>
+                                <a className="nav-link" href="#">Home</a>
                             </li>
                         </ul>
                         <div className={`form-check form-switch text-${props.mode==='dark'?'light':'dark'}`}>
